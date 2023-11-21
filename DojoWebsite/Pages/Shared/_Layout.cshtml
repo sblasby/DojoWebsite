@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About/">About</a></li>
+            <li><a href="/History/">History</a></li>
+            <li><a href="/Gallery/">Gallery</a></li>
+            <li><a href="/Contact/">Get In Touch</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        @RenderBody()
+    </div>
+    
+
+    <footer>This is the footer</footer>
+
+</body>
+</html>

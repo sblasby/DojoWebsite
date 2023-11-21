@@ -1,0 +1,29 @@
+﻿h1{
+    color : red;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-inline: 10px;
+    padding-inline: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color : white;
+}
+
+body{
+    margin : 0;
+}
