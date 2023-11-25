@@ -1,0 +1,25 @@
+﻿
+body {
+    background-image: none;
+    background: linear-gradient(to bottom,#ececec,#7b7b7b)
+    /*background-color: #ececec;*/
+}
+
+
+#centering-div {
+    display: flex;
+    place-items : center;
+    flex-direction : column;
+    margin-inline : 10vw;
+}
+
+div.content-box {
+    max-width: 100%;
+    background-color: #191919;
+    /*border: 3px solid #5e5e5e;*/
+    border-radius: 20px;
+    padding-inline: 7vw;
+    padding-block : 3vh;
+    color: #e6e6e6;
+    font-family : sans-serif;
+}

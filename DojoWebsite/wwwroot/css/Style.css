@@ -24,9 +24,11 @@ nav li {
 }
 
 nav a{
-    color : #f8f8ff;
-    padding-inline : 10px;
-    padding : 5px 10px 5px 10px;
+    /*color : #f8f8ff;*/
+    color : black;
+    padding-inline : 3vw;
+    padding-top : 10px;
+    padding-bottom : 10px;
     border-radius : 20px;
     text-decoration : none;
     font-size : 1.5rem;
@@ -44,9 +46,8 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    /*background: radial-gradient(circle, #000000, #111111 70%, #222222);*/
-    background-image : url(/images/mountains.jpg);
-    background-size : contain;
+    background-image : url(/images/mountains_cropped.jpg);
+    background-size : cover;
 }
 
 body.flex-container {
