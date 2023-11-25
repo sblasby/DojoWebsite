@@ -1,9 +1,9 @@
-﻿#background-image{
+﻿/*#background-image{
     background-image : url('../images/mountains.jpg');
     background-size : cover;
     height : 100%;
     width : 100%;
-}
+}*/
 
 #background-container {
     height: 90vh;
@@ -48,15 +48,48 @@
     height : 50vh;
 }
 
-#welcome-content{
-    background-color : black;
-    color : white;
-}
 
 #welcome-header{
     margin : 0;
 }
 
-#welcome-content{
-    margin : 0;
+#welcome {
+    margin: 0;
+    /*background-color : black;*/
+    color : white;
+    height: 100%;
+}
+
+#welcome-header{
+    align-self:flex-start;
+    color : white;
+    padding-bottom : 3vh;
+}
+
+#bu-div{
+    display : flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+
+#bu-kanji {
+    width: auto;
+    height: 20vh;
+    padding-block: 10vh;
+}
+
+#welcome-wrapper{
+    min-height: 100vh;
+}
+
+div.text-container{
+    padding-inline:10vw;
+    font-size:1.25rem;
+}
+
+#ryan-sign-off{
+    padding-top: 3vh;
+    text-align:right;
 }

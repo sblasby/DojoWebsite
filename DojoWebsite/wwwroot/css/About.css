@@ -1,11 +1,4 @@
 ﻿
-body {
-    background-image: none;
-    background: linear-gradient(to bottom,#ececec,#7b7b7b)
-    /*background-color: #ececec;*/
-}
-
-
 #centering-div {
     display: flex;
     place-items : center;
@@ -22,4 +15,9 @@ div.content-box {
     padding-block : 3vh;
     color: #e6e6e6;
     font-family : sans-serif;
+}
+
+body.flex-container {
+    background-image: none;
+    background: linear-gradient(to bottom,#ececec,#7b7b7b)
 }
