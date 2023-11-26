@@ -6,21 +6,32 @@
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
     height : 10vh;
     margin-top : 0.75%;
     font-family : 'Brush Font';
     font-weight : bold;
 }
 
-ul {
+ul.nav-right {
+    justify-self : right;
     list-style: none;
+    padding-right: 1vw;
+    grid-row: 1;
+}
+
+
+ul.nav-left {
+    justify-self: left;
+    list-style: none;
+    grid-row: 1;
+    padding-left:1vw;
 }
 
 nav li {
     display: inline-block;
-    padding-inline: 40px;
+    padding-inline: 0;
 }
 
 nav a{

@@ -17,7 +17,35 @@ div.content-box {
     font-family : sans-serif;
 }
 
+/*#ykkf-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 4vw;
+}*/
+
+#ykkf-content {
+    margin: 0;
+    display : grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows : 10vh;
+    grid-gap : 10px;
+}
+
+#ykkf-logo{
+    height : 100%;
+    width : auto;
+}
+
 body.flex-container {
     background-image: none;
     background: linear-gradient(to bottom,#ececec,#7b7b7b)
+}
+
+p.section-content{
+    font-size: 1.25rem;
+}
+
+div.section-container{
+    margin-block: 5vh;
 }
