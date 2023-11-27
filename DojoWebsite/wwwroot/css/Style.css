@@ -1,17 +1,27 @@
-﻿.content{
-    height : 80vh;
+﻿
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    height : 90vh;
     margin : 0;
     padding : 0;
     flex : 1;
 }
 
-nav {
+nav.main-nav {
     display: grid;
     grid-template-rows: 1fr;
-    height : 10vh;
-    margin-top : 0.75%;
-    font-family : 'Brush Font';
-    font-weight : bold;
+    height: 10vh;
+    font-family: 'Brush Font';
+    font-weight: bold;
+}
+
+
+nav.main-nav ul {
+    display: flex;
+    align-items: center;
 }
 
 ul.nav-right {
@@ -29,25 +39,25 @@ ul.nav-left {
     padding-left:1vw;
 }
 
-nav li {
+nav.main-nav li {
     display: inline-block;
     padding-inline: 0;
 }
 
-nav a{
+nav.main-nav a {
     /*color : #f8f8ff;*/
-    color : black;
-    padding-inline : 3vw;
-    padding-top : 10px;
-    padding-bottom : 10px;
-    border-radius : 20px;
-    text-decoration : none;
-    font-size : 1.5rem;
+    color: black;
+    padding-inline: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-nav a:hover{
-    color : #660000;
-    cursor : pointer;
+nav.main-nav a:hover {
+    color: #660000;
+    cursor: pointer;
 }
 
 
@@ -59,7 +69,6 @@ body {
     flex-direction: column;
     /*background-image : url(/images/mountains_cropped.jpg);
     background-size : cover;*/
-    background: linear-gradient(to bottom,#ececec,#7b7b7b)
 }
 
 body.flex-container {
@@ -68,8 +77,9 @@ body.flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image : url(/images/mountains_cropped.jpg);
-    background-size : cover;
+    background-image: none;
+    background: linear-gradient(to bottom,#ececec,#7b7b7b);
+    
 }
 
 footer {

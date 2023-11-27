@@ -1,51 +1,113 @@
-﻿
-#centering-div {
-    display: flex;
-    place-items : center;
-    flex-direction : column;
-    margin-inline : 10vw;
-}
+﻿/*Chaging the background*/
 
-div.content-box {
-    max-width: 100%;
+
+/*Creating the backdrop for content*/
+
+
+#content-container {
+    margin-block: 5vh;
+    margin-inline: 10vw;
     background-color: #191919;
-    /*border: 3px solid #5e5e5e;*/
     border-radius: 20px;
-    padding-inline: 7vw;
-    padding-block : 3vh;
+    height: 80vh;
+    font-size: 1.25rem;
+    padding-block: 5vh;
+    padding-left: 5vw;
+    padding-right: 2vw;
     color: #e6e6e6;
-    font-family : sans-serif;
 }
 
-/*#ykkf-container {
+/*Scrollable part of the content*/
+#scroll-container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/*Putting the ykkf image along side the text*/
+#ykkf-container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 4vw;
-}*/
-
-#ykkf-content {
-    margin: 0;
-    display : grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows : 10vh;
-    grid-gap : 10px;
+    grid-template-columns: 1fr 7fr;
+    grid-gap: 10px;
 }
 
 #ykkf-logo{
-    height : 100%;
-    width : auto;
+    grid-column: 1;
+    width: auto;
+    height: auto;
+    max-height: 10vh;
 }
 
-body.flex-container {
-    background-image: none;
-    background: linear-gradient(to bottom,#ececec,#7b7b7b)
+#ykkf-content{
+    grid-column: 2;
+    margin: 0;
 }
 
-p.section-content{
-    font-size: 1.25rem;
+/*Making the ykkf image the same size as the text*/
+#ykkf-div {
+    height: 100%;
+    grid-column: 1;
+    background-image: url(../images/Ykkf_badge.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-div.section-container{
-    margin-block: 5vh;
+/*Changing the font to sans seriff*/
+#content-container{
+    font-family: sans-serif;
 }
+
+/*Setting up the nav layout*/
+#scrollspy-div{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    height: 70vh;
+    grid-gap: 20px;
+}
+
+#scroll-container {
+    grid-column: 2;
+}
+
+div.about-navigation-div{
+    grid-column: 1;
+}
+
+#about-nav{
+    display:grid;
+    grid-column: 1;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr;
+    height: 100%;
+}
+
+ul.about-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+ul.about-ul li{
+    padding-block: 5vh;
+}
+
+#about-nav h2 {
+    margin: 0;
+    height: 5vh;
+}
+
+#link-div{
+    display:grid;
+    align-content:center;
+    height: 65vh;
+}
+
+/*padding between sections*/
+div.section-container {
+    padding-bottom: 5vh;
+}
+

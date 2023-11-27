@@ -1,9 +1,7 @@
-﻿/*#background-image{
-    background-image : url('../images/mountains.jpg');
-    background-size : cover;
-    height : 100%;
-    width : 100%;
-}*/
+﻿body.flex-container {
+    background-image: url(/images/mountains_cropped.jpg);
+    background-size: cover;
+}
 
 #background-container {
     height: 90vh;
@@ -55,7 +53,6 @@
 
 #welcome {
     margin: 0;
-    /*background-color : black;*/
     color : white;
     height: 100%;
 }
@@ -75,8 +72,7 @@
 
 
 #bu-kanji {
-    width: auto;
-    height: 20vh;
+
     padding-block: 10vh;
 }
 
