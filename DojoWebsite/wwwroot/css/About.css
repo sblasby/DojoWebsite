@@ -12,7 +12,7 @@
     height: 80vh;
     font-size: 1.25rem;
     padding-block: 5vh;
-    padding-left: 5vw;
+    padding-left: 2vw;
     padding-right: 2vw;
     color: #e6e6e6;
 }
@@ -21,6 +21,7 @@
 #scroll-container {
     height: 100%;
     overflow-y: auto;
+    padding-right: 1vw;
 }
 
 /*Putting the ykkf image along side the text*/
@@ -75,35 +76,60 @@ div.about-navigation-div{
     grid-column: 1;
 }
 
-#about-nav{
-    display:grid;
+#about-nav {
+    display: grid;
     grid-column: 1;
     grid-template-rows: 1fr;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     height: 100%;
+    background-color: #2a2a2a;
+    border-radius: 20px;
 }
 
 ul.about-ul {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
-    padding-left: 2vw;
+    justify-self: center;
 }
 
 ul.about-ul li{
-    padding-block: 5vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
 }
 
-#about-nav h2 {
-    margin: 0;
-    height: 5vh;
+ul.about-ul a{
+    padding-inline: 10%;
+    padding-block: 5%;
+    max-width: fit-content;
+    border-radius: 10px;
+    transition: background-color ease 0.1s;
 }
+
+
+ul.about-ul a:hover {
+    cursor: pointer;
+    background-color: #7b7b7b;
+}
+
+/*#about-nav h2 {
+    margin: 0;
+    padding-left: 10%;
+    padding-top:5%;
+    height: 10%;
+}*/
 
 #link-div{
     display:grid;
-    align-content:center;
-    height: 65vh;
+    align-items:center;
+    height: 100%;
+    grid-template-rows: 1fr;
 }
 
 /*padding between sections*/
@@ -111,3 +137,7 @@ div.section-container {
     padding-bottom: 5vh;
 }
 
+/*Initally no content*/
+div.section-container{
+    display: none;
+}
