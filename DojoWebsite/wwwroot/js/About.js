@@ -2,26 +2,38 @@
 
     const sectionLinks = Array.from(document.querySelectorAll('ul.about-ul a'));
 
-    const sectionContent = Array.from(document.querySelectorAll('div.section-container'));
+    const sectionContent = Array.from(document.querySelectorAll('div.selectable'));
 
     const linkBackground = '#7b7b7b';
 
-    sectionContent[0].style.display = 'block';
+    let currSection = document.getElementById('welcome');
 
-    let currSection = sectionContent[0];
-
-    let currLink = sectionLinks[0];
+    let currLink
 
     for (let i = 0; i < sectionLinks.length; i++) {
         sectionLinks[i].addEventListener('click', function () {
 
-            currSection.style.display = '';
-            currSection = sectionContent[i];
-            currSection.style.display = 'block';
+            currSection.style.display = 'none';  
 
-            currLink.style.backgroundColor = '';
-            currLink = sectionLinks[i];
-            currLink.style.background = linkBackground;
+            if (currLink !== undefined) {
+                currLink.style.backgroundColor = '';
+            }
+
+            //Reselecting a link will deselect it and welcome comes back
+            if (currLink === sectionLinks[i]) {
+                currLink = undefined;
+                currSection = document.getElementById('welcome');
+                currSection.style.display = 'flex';
+
+            }
+            else {
+                currLink = sectionLinks[i];
+                currSection = sectionContent[i];
+                currLink.style.backgroundColor = linkBackground;
+                currSection.style.display = 'block';
+            }
+
+            
 
         })
 

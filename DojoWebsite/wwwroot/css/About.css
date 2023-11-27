@@ -132,12 +132,18 @@ ul.about-ul a:hover {
     grid-template-rows: 1fr;
 }
 
-/*padding between sections*/
-div.section-container {
-    padding-bottom: 5vh;
+/*Initally no content*/
+div.selectable{
+    display: none;
 }
 
-/*Initally no content*/
-div.section-container{
-    display: none;
+
+/*Setting up the welcome stuff*/
+#welcome{
+    display: flex;
+    flex-direction: column;
+}
+
+#bu-kanji{
+    align-self:center;
 }
