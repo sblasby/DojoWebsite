@@ -6,6 +6,8 @@
 
     const linkBackground = '#7b7b7b';
 
+    const scrollDiv = this.getElementById('scroll-container')
+
     let currSection = document.getElementById('welcome');
 
     let currLink
@@ -14,6 +16,8 @@
         sectionLinks[i].addEventListener('click', function () {
 
             currSection.style.display = 'none';  
+
+            scrollDiv.scrollTo(0,0)
 
             if (currLink !== undefined) {
                 currLink.style.backgroundColor = '';
