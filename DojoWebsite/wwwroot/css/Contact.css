@@ -1,0 +1,27 @@
+﻿#content-container {
+    margin-block: 5vh;
+    margin-inline: 10vw;
+    background-color: #191919;
+    border-radius: 20px;
+    height: 80vh;
+    font-size: 1.25rem;
+    padding-block: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #e6e6e6;
+}
+
+#content-container h1{
+    margin-top:0;
+}
+
+div.link-div {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+#instagram-link-div{
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}

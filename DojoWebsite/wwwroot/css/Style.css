@@ -67,8 +67,8 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    /*background-image : url(/images/mountains_cropped.jpg);
-    background-size : cover;*/
+    background-image : url(/images/mountains_cropped.jpg);
+    background-size : cover;
 }
 
 body.flex-container {
@@ -77,8 +77,8 @@ body.flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: none;
-    background: linear-gradient(to bottom,#ececec,#7b7b7b);
+    /*background-image: none;
+    background: linear-gradient(to bottom,#ececec,#7b7b7b);*/
     
 }
 
