@@ -42,15 +42,14 @@ ul.nav-left {
 nav.main-nav li {
     display: inline-block;
     padding-inline: 0;
+    padding-inline: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav.main-nav a {
     /*color : #f8f8ff;*/
     color: black;
-    padding-inline: 3vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
     text-decoration: none;
     font-size: 1.5rem;
 }
