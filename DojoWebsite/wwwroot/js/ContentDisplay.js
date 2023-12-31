@@ -1,4 +1,8 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+﻿// This is the js file that contains the javascript script
+// for hiding and displaying the content in the history
+// and about section
+
+document.addEventListener('DOMContentLoaded', function () {
 
     const sectionLinks = Array.from(document.querySelectorAll('ul.about-ul a'));
 
@@ -15,9 +19,9 @@
     for (let i = 0; i < sectionLinks.length; i++) {
         sectionLinks[i].addEventListener('click', function () {
 
-            currSection.style.display = 'none';  
+            currSection.style.display = 'none';
 
-            scrollDiv.scrollTo(0,0)
+            scrollDiv.scrollTo(0, 0)
 
             if (currLink !== undefined) {
                 currLink.style.backgroundColor = '';
@@ -37,7 +41,7 @@
                 currSection.style.display = 'block';
             }
 
-            
+
 
         })
 

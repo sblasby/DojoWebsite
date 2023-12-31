@@ -1,0 +1,116 @@
+﻿#content-container {
+    margin-block: 5vh;
+    margin-inline: 10vw;
+    background-color: #191919;
+    border-radius: 20px;
+    height: 80vh;
+    font-size: 1.25rem;
+    padding-block: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #e6e6e6;
+}
+
+/*Scrollable part of the content*/
+#scroll-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1vw;
+}
+
+
+
+/*Changing the font to sans seriff*/
+#content-container {
+    font-family: sans-serif;
+}
+
+/*Setting up the nav layout*/
+#scrollspy-div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    height: 70vh;
+    grid-gap: 20px;
+}
+
+#scroll-container {
+    grid-column: 2;
+}
+
+div.about-navigation-div {
+    grid-column: 1;
+}
+
+#about-nav {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+}
+
+ul.about-ul {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+}
+
+ul.about-ul li {
+    width: 90%;
+    display: grid;
+    justify-items: center;
+}
+
+ul.about-ul a {
+    padding-inline: 10%;
+    padding-block: 5%;
+    border-radius: 10px;
+    transition: background-color ease 0.1s;
+    text-align: center;
+    max-width: fit-content;
+}
+
+
+ul.about-ul a:hover {
+    cursor: pointer;
+    background-color: #7b7b7b;
+}
+
+/*#about-nav h2 {
+    margin: 0;
+    padding-left: 10%;
+    padding-top:5%;
+    height: 10%;
+}*/
+
+#link-div {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    grid-template-rows: 1fr;
+}
+
+/*Initally no content*/
+div.selectable {
+    display: none;
+}
+
+
+/*Setting up the welcome stuff*/
+#welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+#bu-kanji {
+    align-self: center;
+}
