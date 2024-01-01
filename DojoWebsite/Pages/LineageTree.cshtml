@@ -1,0 +1,74 @@
+﻿@page
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Lineage Tree</title>
+
+		<style>
+			div.person-container {
+				display: grid;
+				border: 1px solid black;
+				max-width: fit-content;
+				padding: 10px;
+				margin-inline: 2vw;
+				height: 5vh;
+				align-content: center;
+				justify-content: center;
+			}
+
+			p{
+				margin:0;
+				max-height: fit-content;
+				position:relative;
+			}
+
+			p.person-name::before{
+				display: block;
+				position: absolute;
+				content: '';
+				border-top: 1px solid red;
+				border-left: 2px solid red;
+				height: calc(2vh - 1px);
+				width: calc(50% + 9px);
+				left: 50%;
+				top: -4.75vh;
+			}
+
+			div.descendent-container {
+				display:flex;
+				margin-top: 4vh;
+			}
+		</style>
+	</head>
+
+	
+
+	<body>
+		<div class="person-container">
+			<p>Ryan Bodrug</p>
+		</div>
+		
+		
+		
+		<div class="descendent-container">
+				<div class="person-container">
+					<p class="person-name">Stephanie Bjurstorm</p>
+				</div>
+
+				<div class="person-container">
+					<p class="person-name">Simon Blasby</p>
+				</div>
+
+				<div class="person-container">
+					<p class="person-name">Colin Blasby</p>
+				</div>
+		</div>
+		
+	</body>
+</html>
+
